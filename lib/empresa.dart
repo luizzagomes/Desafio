@@ -28,8 +28,8 @@ class Empresa {
     String aux2 = "Nome Fantasia: $nomeFantasia";
     String aux3 = "Razão Social: $razaoSocial";
     String aux4 = "Telefone: $telefone";
-    String aux5 = "Endereço: $endereco";
-    String aux6 = "Sócio: $socio";
+    String aux5 = "______ENDEREÇO______ $endereco";
+    String aux6 = "______SÓCIO______ $socio";
 
     return "\n$aux\n$aux1\n$aux2\n$aux3\n$aux4\n$aux5\n$aux6";
   }

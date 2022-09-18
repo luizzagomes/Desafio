@@ -80,7 +80,7 @@ void findCnpj(List<Empresa> e) {
 
   for (int i = 0; i < e.length; i++) {
     if (cnpjAux == e[i].cnpj) {
-      print("Empresa encontrada: ${e[i]}");
+      print("Empresa encontrada! ${e[i]}");
       i = e.length;
     }
   }
@@ -92,14 +92,14 @@ void findCpfSocio(List<Empresa> e) {
 
   for (int i = 0; i < e.length; i++) {
     if (cpfAux == e[i].socio.cpfDoSocio) {
-      print("Empresa encontrada: ${e[i]}");
+      print("Empresa encontrada! ${e[i]}");
       i = e.length;
     }
   }
 }
 
 void ListarEmpresa(List<Empresa> e) {
-  e.sort((a, b) => a.razaoSocial.compareTo(b.razaoSocial.toLowerCase()));
+  e.sort((a, b) => a.razaoSocial.compareTo(b.razaoSocial));
   print("\t_________LISTA DE EMPRESAS_________");
   print("$e");
 }
